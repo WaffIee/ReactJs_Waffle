@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 import '../App.css';
 import {NavLink } from 'react-router-dom';
 import {FaHome} from 'react-icons/fa'
-import {FaRegUser} from 'react-icons/fa'
 import {FaCode} from 'react-icons/fa'
 import {FaStroopwafel} from 'react-icons/fa'
+import {FaUser} from 'react-icons/fa'
 
 class NavBar extends Component {
     render() {
         return (
-            <div className="main">
+            <div className="mainnavbar">
                 <nav className="navbar">
                   <ul className="list">
                       <li className="title">
-                      <FaStroopwafel className="icon"/>
+                      <FaCode className="icon"/>
 
                              Waffle</li>
                           <li className="items">
@@ -22,7 +22,7 @@ class NavBar extends Component {
                             </li>
 
                             <li className="items">
-                                <FaRegUser className="icon"/>
+                                <FaUser className="icon"/>
                                 <NavLink  style={{ textDecoration: 'none' }} className="link"  exact to="/aboutme">About me </NavLink>
                             </li>
 
